@@ -11,7 +11,7 @@
     output.innerText = displayedNumbers;
   };
 
-  const handleEqualsOperator = async () => {
+  const handleEqualsOperator = () => {
     const inputString = inputArray.join("");
     try {
       const evaluation = String(math.evaluate(inputString));
