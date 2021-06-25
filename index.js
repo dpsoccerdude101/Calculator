@@ -1,6 +1,7 @@
 (() => {
   let inputArray = [];
-  const output = document.getElementsByTagName("output")[0];
+  
+  const output = document.querySelector("output");
 
   const clickedButton = (eventClick) => {
     return eventClick.target.dataset;
@@ -17,7 +18,6 @@
       const evaluation = String(math.evaluate(inputString));
       resetCalculator();
       inputArray = evaluation.split("");
-      console.dir(inputArray);
       setOutput(inputArray.join(""));
     } catch (error) {
       alert(error);
